@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pagina_baba_perfil.css">
+    <title>Página de Perfil (Cuidadores(a))</title>
+</head>
+<body onload="on_load_imagem_de_perfil_edicao_baba()">
+
+    <!--NAVBAR-->
+    <nav>
+        <a href="TelaInicial.html">
+            <img src="../fotos/logoHorizontal.png" alt="Imagem logo.png" class="nav_img_logo">
+        </a>
+        <a href="TelaInicial.html">Home</a>
+        <a href="pagina_sobre_nos.html">Sobre Nós</a>
+        <a href="blogAtualizado.html">Blog</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="perfil_baba.html"><img src="../fotos/iconePerfil.png" alt="Imagem usuario.png"
+                class="nav_img_usuario"></a>
+    </nav>
+
+    <div class="dv_espacamento">
+
+        <div id="opcao_de_imagens"></div>
+        <div class="dv_pai">
+            <div class="dv_pai_espacamento">
+                    <div class="dv_agrupamento_de_nome_e_imagem">
+                        <h2 id="hdois_nome_de_usuario">Username</h2>
+                        <img src="../fotos/ip_1.png" alt="Imagem_de_perfil.png" id="imagem_de_usuario">
+                    </div>
+
+                <button onclick="modificar_imagem_de_perfil_baba()">Mudar Imagem</button>
+        
+                    <div class="dv_pai_descicao">
+                        <label>
+                            Descrição de perfil:
+                            <input type="text" placeholder="Digite sua descrição" id="nova_descricao_de_perfil">
+                        </label>
+                    </div>
+                <button onclick="descricao_de_perfil_baba()">Enviar</button>
+            </div>
+        </div>
+
+        <div class="dv_pai_editar_perfil">
+            <div class="dv_pai_editar_perfil_espacamento_text">
+                <h2>Editar Perfil</h2>
+                <div class="dv_pai_editar_perfil_informacoes_e_perfil">
+                    <h5>Informações</h5>
+                    <a href="perfil_baba.html" class="a_pai_editar_perfil_hyperlink">Perfil</a>
+                </div>
+            </div>
+                <div class="dv_pai_editar_perfil_alinhamento">
+                    <div class="dv_pai_editar_perfil_espacamento_inpts">
+                            <label>
+                                Nome de Usuário:
+                                    <br>
+                                <input type="text" id="inpt_nome_de_usuario_editar_perfil">
+                            </label>
+
+                            <label>
+                                Email:
+                                    <br>
+                                <input type="email" id="inpt_email_de_usuario_editar_perfil">
+                            </label>
+                            <label>
+                                Senha:
+                                    <br>
+                                <input type="text" minlength="7" maxlength="12" id="inpt_senha_de_usuario_editar_perfil">
+                            </label>
+                        </div>
+
+                        <div >
+                            <h5>Preferencias de Cuidado com:</h5>
+                            <label>
+                                <input type="checkbox" id="inpt_preferencias_a"> Recém-Nascido
+                            </label>
+                            <label>
+                                <input type="checkbox" id="inpt_preferencias_b"> Bebes de 1-3 anos
+                            </label>
+                            <label>
+                                <input type="checkbox" id="inpt_preferencias_c"> Crianças de 4-7 anos
+                            </label>
+                            <label>
+                                <input type="checkbox" id="inpt_preferencias_d"> Crianças com Necessidades Especiais
+                            </label>
+                        </div>
+                        <div>
+                            <button onclick="editar_perfil_baba()" class="botao_editar">Editar</button>
+                            <button onclick="excluir_conta_atraves_de_perfil_baba()" class="botao_excluir">Excluir Conta</button>
+                        </div>
+                        <div class="icons_social_midia">
+                            <button onclick="mudar_link_whatsapp_baba()" class="definir_espaco"><img src="../fotos/whatsapp.png" alt="whatsapp"></button>
+                            <button onclick="mudar_link_instagram_baba()"><img src="../fotos/instagram.png" alt="instagram"></button>
+                            <button onclick="mudar_link_facebook_baba()"><img src="../fotos/facebook.png" alt="facebook"></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+<footer>
+        <div class="rodape">
+            <div>
+                <img src="LogoMaior.png" alt="Logo Vertical.png">
+                <p>Site de babás para sua criança por todo Brasil.</p>
+            </div>
+            <div>
+                <ul>
+                    <h3>Contatos</h3>
+                    <li>BabyLand@gmail.com</li>
+                        <br>
+                    <li>+55 48 9999-9999</li>
+                        <br>
+                    <li>&ensp;</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Links</h3>
+                        <li><a href="">Home</a></li>
+                            <br>
+                        <li><a href="pagina_sobre_nos_.html">Sobre Nós</a></li>
+                            <br>
+                        <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Outros</h3>
+                    <li><a href="pagina_politica_de_privacidade.html">Política de Privacidade</a></li>
+                        <br>
+                    <li><a href="pagina_termos.html">Termos & Condições</a></li>
+                        <br>
+                    <li>&ensp;</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">Copyright ©2024 - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="../JS/scriptNovo.js"></script>
+</body>
+</html>

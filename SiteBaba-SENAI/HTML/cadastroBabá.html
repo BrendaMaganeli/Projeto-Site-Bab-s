@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../fotos/LogoNavegador.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/cadastroBaba.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="logo">
+            <img src="../fotos/LogoMaior.png" alt="Logo" >
+        </div>
+        <div class="form-container" id="cadastroBaba">
+    
+                <div class="Input-Principais">
+    
+                    <h2>Cadastro de Cuidadoras</h2>
+    
+                    <label for="">Nome Completo:</label>
+                    <input type="text" placeholder="Nome" class="input-Principais-text" id="inputNome" required><br><br>
+                    <label for="">Idade: </label>
+                    <input type="number" class="input-Principais-text" id="idadeInput" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="input-Principais-text" id="emailInput" required><br><br>
+    
+                    <label for="password">Senha:</label>
+                    <input type="password" class="input-Principais-text" id="senhaInput" required><br><br>
+                    <label for="password">Confirmar senha:</label>
+                    <input type="password" class="input-Principais-text" id="confirmarSenhaInput" required><br><br>
+
+                    <div class="checkbox">
+                        <input type="checkbox" class="recemNascido" id="recemNascido" value="Recém-Nascido" ><label for="">Recém-Nascido</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="bebes" id="bebes" value="Bebes de 1-3 anos" > <label for="">Bebes de 1-3 anos</label><br>
+                    </div >
+                    <div class="checkbox">
+                        <input type="checkbox" class="recemNascido" id="criancas" value="Crianças de 4-7 anos" > <label for="">Crianças de 4-7 anos</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="criançasComNecessidadesEspeciais" id="criancasEspeciais" value="Criança com Necessidades Especiais" > <label for="">Crianças com Necessidades Especiais</label><br><br>
+                    </div>
+
+                    <div class="checkbox">
+                        <input  type="checkbox" id="termo" class="checkbox-ajustes" required ><label for="" > <a href="pagina_termos.html">Aceitar Termos de Uso</a></label>
+                    </div>
+
+                    <button class="enter" onclick="cadastraBaba()">Confirmar</button>
+                    <a href="cadastroPais.html" class="possuiConta">Cadastrar-se como responsável?</a>
+                    <a href="telaLogin.html" class="possuiConta">possui uma conta?</a>
+
+                    <div id="mensagem"></div>
+    </div>      
+
+                </div>
+    
+         
+    <script src="../js/scriptNovo.js"></script>
+</body>
+</html>
